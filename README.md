@@ -8,10 +8,11 @@ local Window = Library:Window({
 })
 ```
 
-```TabSection```
+```TabSection
 local TabSection = Window:TabSection({
     text = "TabSection"
 })
+```
 
 ```Tab
 local Tab = TabSection:Tab({

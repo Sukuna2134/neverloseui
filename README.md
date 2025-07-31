@@ -1,4 +1,5 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostDuckyy/UI-Libraries/main/Neverlose/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sukuna2134/neverloseui/refs/heads/main/neverlose%20lib"))()
+
 -- Toggle UI: Library:Toggle()
 
 local Window = Library:Window({

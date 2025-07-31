@@ -1,31 +1,41 @@
+```Library
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sukuna2134/neverloseui/refs/heads/main/neverlose%20lib"))()
+```
 
--- Toggle UI: Library:Toggle()
-
+```Window
 local Window = Library:Window({
     text = "Window"
 })
+```
 
+```TabSection```
 local TabSection = Window:TabSection({
     text = "TabSection"
 })
 
+```Tab
 local Tab = TabSection:Tab({
     text = "Tab",
     icon = "rbxassetid://7999345313",
 })
+```
 
+```Section
 local Section = Tab:Section({
     text = "Section"
 })
+```
 
+```Button
 Section:Button({
     text = "Button",
     callback = function()
         print("Clicked button")
     end,
 })
+```
 
+```Toggle
 Section:Toggle({
     text = "Toggle",
     state = false, -- Default boolean
@@ -33,7 +43,9 @@ Section:Toggle({
         print("Toggle current: ",boolean)
     end
 })
+```
 
+```Slider
 Section:Slider({
     text = "Slider",
     min = 10,
@@ -43,7 +55,9 @@ Section:Slider({
         print(number)
     end
 })
+```
 
+```Dropdown
 Section:Dropdown({
     text = "Dropdown",
     list = {"Apple", "Banana","Coconut"},
@@ -52,7 +66,9 @@ Section:Dropdown({
         print(String)
     end
 })
+```
 
+```Textbox
 Section:Textbox({
     text = "Textbox",
     value = "Default",
@@ -60,7 +76,9 @@ Section:Textbox({
         print(String)
     end
 })
+```
 
+```Colorpicker
 Section:Colorpicker({
     text = "Colorpicker",
     color = Color3.new(1,1,1),
@@ -68,16 +86,9 @@ Section:Colorpicker({
         print(HSV)
     end
 })
+```
 
---[[
-    blacklisted keybind:
-        Return
-        Space
-        Tab
-        W,A,S,D,I,O
-        Unknown
-]]
-
+```Keybind
 Section:Keybind({
     text = "Keybind",
     default = Enum.KeyCode.Z,
@@ -86,3 +97,4 @@ Section:Keybind({
         print(defaultBind)
     end
 })
+```
